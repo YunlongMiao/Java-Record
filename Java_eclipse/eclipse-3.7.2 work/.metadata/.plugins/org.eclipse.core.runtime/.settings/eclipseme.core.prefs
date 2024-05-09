@@ -1,0 +1,5 @@
+auto_launch_migration=false
+eclipse.preferences.version=1
+preverify_config_value=CLDC-1.0
+proguard_dir=D\:\\Build\\proguard-7.4.2\\bin
+wtk_root=D\:\\Build\\Java-Wireless-Toolkit
