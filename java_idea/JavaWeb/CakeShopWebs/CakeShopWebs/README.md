@@ -61,3 +61,17 @@
 
 ```
 
+第7章
+
+```
+根据参数请求显示不同的页面
+```
+
+```
+/example/eElAndJstl		el和jstl功能测试文件夹，无用
+/src/cn.itcast.servlet/MyServlet.java
+/web/WEB-INF/lib/jstl.jar
+/web/WEB-INF/lib/standard.jar
+/web/if.jsp
+```
+
