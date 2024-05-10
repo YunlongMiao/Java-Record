@@ -11,33 +11,33 @@ public class PurchaseServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        // »ñµÃÓÃ»§¹ºÂòµÄÉÌÆ·
+        // è·å¾—ç”¨æˆ·è´­ä¹°çš„å•†å“
         String id = req.getParameter("id");
         if (id == null) {
-            // Èç¹ûidÎªnull£¬ÖØ¶¨Ïòµ½ListBookServletÒ³Ãæ
+            // å¦‚æœidä¸ºnullï¼Œé‡å®šå‘åˆ°ListBookServleté¡µé¢
             String url = "ListBookServlet";
             resp.sendRedirect(url);
             return;
         }
         Cake book = CakeDB.getCake(id);
-        // ´´½¨»òÕß»ñµÃÓÃ»§µÄSession¶ÔÏó
+        // åˆ›å»ºæˆ–è€…è·å¾—ç”¨æˆ·çš„Sessionå¯¹è±¡
         HttpSession session = req.getSession();
-        // ´ÓSession¶ÔÏóÖĞ»ñµÃÓÃ»§µÄ¹ºÎï³µ
+        // ä»Sessionå¯¹è±¡ä¸­è·å¾—ç”¨æˆ·çš„è´­ç‰©è½¦
         List<Cake> cart = (List) session.getAttribute("cart");
         if (cart == null) {
-            // Ê×´Î¹ºÂò£¬ÎªÓÃ»§´´½¨Ò»¸ö¹ºÎï³µ(List¼¯ºÏÄ£Äâ¹ºÎï³µ)
+            // é¦–æ¬¡è´­ä¹°ï¼Œä¸ºç”¨æˆ·åˆ›å»ºä¸€ä¸ªè´­ç‰©è½¦(Listé›†åˆæ¨¡æ‹Ÿè´­ç‰©è½¦)
             cart = new ArrayList<Cake>();
-            // ½«¹ºÎï³Ç´æÈëSession¶ÔÏó
+            // å°†è´­ç‰©åŸå­˜å…¥Sessionå¯¹è±¡
             session.setAttribute("cart", cart);
         }
-        // ½«ÉÌÆ··ÅÈë¹ºÎï³µ
+        // å°†å•†å“æ”¾å…¥è´­ç‰©è½¦
         cart.add(book);
-        // ´´½¨Cookie´æ·ÅSessionµÄ±êÊ¶ºÅ
+        // åˆ›å»ºCookieå­˜æ”¾Sessionçš„æ ‡è¯†å·
         Cookie cookie = new Cookie("JSESSIONID", session.getId());
         cookie.setMaxAge(60 * 30);
         cookie.setPath("/Servlet");
         resp.addCookie(cookie);
-        // ÖØ¶¨Ïòµ½¹ºÎï³µÒ³Ãæ
+        // é‡å®šå‘åˆ°è´­ç‰©è½¦é¡µé¢
         String url = "CartServlet";
         resp.sendRedirect(url);
     }

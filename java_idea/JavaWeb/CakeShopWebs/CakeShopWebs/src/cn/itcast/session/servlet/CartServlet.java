@@ -11,31 +11,31 @@ public class CartServlet extends HttpServlet {
             throws ServletException, IOException {
         resp.setContentType("text/html;charset=utf-8");
         PrintWriter out = resp.getWriter();
-        // ±äÁ¿cartÒıÓÃÓÃ»§µÄ¹ºÎï³µ
+        // å˜é‡cartå¼•ç”¨ç”¨æˆ·çš„è´­ç‰©è½¦
         List<Cake> cart = null;
-        // ±äÁ¿pruFlag±ê¼ÇÓÃ»§ÊÇ·ñÂò¹ıÉÌÆ·
+        // å˜é‡pruFlagæ ‡è®°ç”¨æˆ·æ˜¯å¦ä¹°è¿‡å•†å“
         boolean purFlag = true;
-        // »ñµÃÓÃ»§µÄsession
+        // è·å¾—ç”¨æˆ·çš„session
         HttpSession session = req.getSession(false);
-        // Èç¹ûsessionÎªnull£¬purFlagÖÃÎªfalse
+        // å¦‚æœsessionä¸ºnullï¼ŒpurFlagç½®ä¸ºfalse
         if (session == null) {
             purFlag = false;
         } else {
-            // »ñµÃÓÃ»§¹ºÎï³µ
+            // è·å¾—ç”¨æˆ·è´­ç‰©è½¦
             cart = (List) session.getAttribute("cart");
-            // Èç¹ûÓÃµÄ¹ºÎï³µÎªnull£¬purFlagÖÃÎªfalse
+            // å¦‚æœç”¨çš„è´­ç‰©è½¦ä¸ºnullï¼ŒpurFlagç½®ä¸ºfalse
             if (cart == null) {
                 purFlag = false;
             }
         }
         /*
-         * Èç¹ûpurFlagÎªfalse£¬±íÃ÷ÓÃ»§Ã»ÓĞ¹ºÂòµ°¸â  ÖØ¶¨Ïòµ½ListServletÒ³Ãæ
+         * å¦‚æœpurFlagä¸ºfalseï¼Œè¡¨æ˜ç”¨æˆ·æ²¡æœ‰è´­ä¹°è›‹ç³•  é‡å®šå‘åˆ°ListServleté¡µé¢
          */
         if (!purFlag) {
-            out.write("¶Ô²»Æğ£¡Äú»¹Ã»ÓĞ¹ºÂòÈÎºÎÉÌÆ·£¡<br>");
+            out.write("å¯¹ä¸èµ·ï¼æ‚¨è¿˜æ²¡æœ‰è´­ä¹°ä»»ä½•å•†å“ï¼<br>");
         } else {
-            // ·ñÔòÏÔÊ¾ÓÃ»§¹ºÂòµ°¸âµÄĞÅÏ¢
-            out.write("Äú¹ºÂòµÄµ°¸âÓĞ£º<br>");
+            // å¦åˆ™æ˜¾ç¤ºç”¨æˆ·è´­ä¹°è›‹ç³•çš„ä¿¡æ¯
+            out.write("æ‚¨è´­ä¹°çš„è›‹ç³•æœ‰ï¼š<br>");
             double price = 0;
             for (Cake cake : cart) {
                 out.write(cake.getName() + "<br>");

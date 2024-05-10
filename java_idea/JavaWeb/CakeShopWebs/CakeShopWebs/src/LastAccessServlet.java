@@ -13,62 +13,62 @@ public class LastAccessServlet extends HttpServlet {
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)
             throws ServletException,IOException {
-        //Ö¸¶¨·şÎñÆ÷Êä³öÄÚÈİµÄ±àÂë·½Ê½UTF-8£¬·ÀÖ¹·¢ÉúÂÒÂë
+        //æŒ‡å®šæœåŠ¡å™¨è¾“å‡ºå†…å®¹çš„ç¼–ç æ–¹å¼UTF-8ï¼Œé˜²æ­¢å‘ç”Ÿä¹±ç 
         response.setContentType("text/html;charset=utf-8");
-        //»ñÈ¡ËùÓĞcookie
+        //è·å–æ‰€æœ‰cookie
         Cookie[] cookies=request.getCookies();
-        //¶¨ÒåflagµÄboolean±äÁ¿£¬ÓÃÓÚÅĞ¶ÏcookiesÊÇ·ñÎª¿Õ
+        //å®šä¹‰flagçš„booleanå˜é‡ï¼Œç”¨äºåˆ¤æ–­cookiesæ˜¯å¦ä¸ºç©º
         boolean flag=false;
-        //±éÀúcookieÊı×é
+        //éå†cookieæ•°ç»„
         if(cookies.length >0&&cookies!=null){
             for(Cookie cookie:cookies) {
-                //»ñÈ¡cookieµÄÃû³Æ
+                //è·å–cookieçš„åç§°
                 String name=cookie.getName();
-                //ÅĞ¶ÏÃû³ÆÊÇ·ñÊÇlastTime
+                //åˆ¤æ–­åç§°æ˜¯å¦æ˜¯lastTime
                 if("lastTime".equals(name)){
-                    //ÓĞ¸Ãcookie²»ÊÇµÚÒ»´Î·ÃÎÊ
+                    //æœ‰è¯¥cookieä¸æ˜¯ç¬¬ä¸€æ¬¡è®¿é—®
                     flag=true;
-                    //ÏìÓ¦Êı¾İ
-                    //»ñÈ¡cookieµÄvalueÊ±¼ä
+                    //å“åº”æ•°æ®
+                    //è·å–cookieçš„valueæ—¶é—´
                     String value=cookie.getValue();
-                    System.out.println("½âÂëÇ°£º"+value);
-                    //URL½âÂë
+                    System.out.println("è§£ç å‰ï¼š"+value);
+                    //URLè§£ç 
                     value= URLDecoder.decode(value, "utf-8");
-                    System.out.println("½âÂëºó£º"+value);
-                    response.getWriter().write("»¶Ó­»ØÀ´£¬ÃçÔÆÁú£¬ÄúÉÏ´Î·ÃÎÊÊ±¼äÎª:"+value);
-                    //ÉèÖÃcookieµÄvalue
-                    //»ñÈ¡µ±Ç°Ê±¼äµÄ×Ö·û´®£¬ÖØĞÂÉèÖÃcookieµÄÖµ£¬ÖØĞÂ·¢ËÍcookie
+                    System.out.println("è§£ç åï¼š"+value);
+                    response.getWriter().write("æ¬¢è¿å›æ¥ï¼Œè‹—äº‘é¾™ï¼Œæ‚¨ä¸Šæ¬¡è®¿é—®æ—¶é—´ä¸º:"+value);
+                    //è®¾ç½®cookieçš„value
+                    //è·å–å½“å‰æ—¶é—´çš„å­—ç¬¦ä¸²ï¼Œé‡æ–°è®¾ç½®cookieçš„å€¼ï¼Œé‡æ–°å‘é€cookie
                     Date date=new Date();
-                    SimpleDateFormat timesdf=new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ HH:mm:ss");
+                    SimpleDateFormat timesdf=new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥ HH:mm:ss");
                     String str_time=timesdf.format(date);
-                    System.out.println("±àÂëÇ°£º"+str_time);
-                    //URL±àÂë
+                    System.out.println("ç¼–ç å‰ï¼š"+str_time);
+                    //URLç¼–ç 
                     str_time=URLEncoder.encode(str_time, "utf-8");
-                    System.out.println("±àÂëºó£º"+str_time);
+                    System.out.println("ç¼–ç åï¼š"+str_time);
                     cookie.setValue(str_time);
-                    //ÉèÖÃcookie´æ»îÊ±¼ä
-                    cookie.setMaxAge(60*60*24*30);	//Ò»¸öÔÂ
-                    //¼ÓÈëµ±Ç°cookieÇëÇóÊ±¼ä
+                    //è®¾ç½®cookieå­˜æ´»æ—¶é—´
+                    cookie.setMaxAge(60*60*24*30);	//ä¸€ä¸ªæœˆ
+                    //åŠ å…¥å½“å‰cookieè¯·æ±‚æ—¶é—´
                     response.addCookie(cookie);
                     break;
                 }
             }
-            //Èç¹ûcookiesÖĞÃ»ÓĞÊ±¼ä£¬Ò²¾ÍÊÇÃ»ÓĞ·ÃÎÊ¹ı
+            //å¦‚æœcookiesä¸­æ²¡æœ‰æ—¶é—´ï¼Œä¹Ÿå°±æ˜¯æ²¡æœ‰è®¿é—®è¿‡
             if(cookies==null || cookies.length==0 || flag==false){
-                //ÉèÖÃcookieµÄvalue
-                //»ñÈ¡µ±Ç°Ê±¼äµÄ×Ö·û´®£¬ÖØĞÂÉèÖÃcookieµÄÖµ£¬ÖØĞÂ·¢ËÍcookie
+                //è®¾ç½®cookieçš„value
+                //è·å–å½“å‰æ—¶é—´çš„å­—ç¬¦ä¸²ï¼Œé‡æ–°è®¾ç½®cookieçš„å€¼ï¼Œé‡æ–°å‘é€cookie
                 Date date=new Date();
-                SimpleDateFormat sdf=new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ HH:mm:ss");
+                SimpleDateFormat sdf=new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥ HH:mm:ss");
                 String str_date=sdf.format(date);
-                System.out.println("±àÂëÇ°£º"+str_date);
-                //URL±àÂë
+                System.out.println("ç¼–ç å‰ï¼š"+str_date);
+                //URLç¼–ç 
                 str_date= URLEncoder.encode(str_date,"utf-8");
-                System.out.println("±àÂëºó£º"+str_date);
+                System.out.println("ç¼–ç åï¼š"+str_date);
                 Cookie cookie=new Cookie("lastTime",str_date);
-                //ÉèÖÃcookie´æ»îÊ±¼ä
-                cookie.setMaxAge(60*60*24*30);//Ò»¸öÔÂ
+                //è®¾ç½®cookieå­˜æ´»æ—¶é—´
+                cookie.setMaxAge(60*60*24*30);//ä¸€ä¸ªæœˆ
                 response.addCookie(cookie);
-                response.getWriter().write("ÄúºÃ£¬»¶Ó­ÄúÊ×´Î·ÃÎÊ");
+                response.getWriter().write("æ‚¨å¥½ï¼Œæ¬¢è¿æ‚¨é¦–æ¬¡è®¿é—®");
             }
         }
     }

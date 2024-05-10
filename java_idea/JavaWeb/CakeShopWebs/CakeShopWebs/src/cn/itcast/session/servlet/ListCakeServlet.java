@@ -14,11 +14,11 @@ public class ListCakeServlet extends HttpServlet {
         resp.setContentType("text/html; charset=utf-8");
         PrintWriter out = resp.getWriter();
         Collection<Cake> cakes = CakeDB.getAll();
-        out.write("±¾Õ¾Ìá¹©µÄµ°¸âÓĞ£º<br>");
+        out.write("æœ¬ç«™æä¾›çš„è›‹ç³•æœ‰ï¼š<br>");
         for (Cake cake : cakes) {
             String url = "PurchaseServlet?id=" + cake.getId();
             out.write(cake.getName() + "<a href='" + url
-                    + "'>µã»÷¹ºÂò</a><br>");
+                    + "'>ç‚¹å‡»è´­ä¹°</a><br>");
         }
     }
 }

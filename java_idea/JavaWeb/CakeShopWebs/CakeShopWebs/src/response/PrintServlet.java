@@ -9,12 +9,12 @@ public class PrintServlet extends HttpServlet {
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)throws ServletException, IOException {
         String data = "itcast";
-      /*  // »ñÈ¡×Ö½ÚÊä³öÁ÷¶ÔÏó
+      /*  // è·å–å­—èŠ‚è¾“å‡ºæµå¯¹è±¡
         OutputStream out = response.getOutputStream();
-        out.write(data.getBytes());// Êä³öĞÅÏ¢*/
-        // »ñÈ¡×Ö·ûÊä³öÁ÷¶ÔÏó
+        out.write(data.getBytes());// è¾“å‡ºä¿¡æ¯*/
+        // è·å–å­—ç¬¦è¾“å‡ºæµå¯¹è±¡
         PrintWriter print = response.getWriter();
-        print.write(data); // Êä³öĞÅÏ¢
+        print.write(data); // è¾“å‡ºä¿¡æ¯
 
     }
     public void doPost(HttpServletRequest request,

@@ -5,17 +5,17 @@ import java.util.Map;
 public class CakeDB {
     private static Map<String, Cake> cake = new LinkedHashMap<String, Cake>();
     static {
-        cake.put("1", new Cake("1", "AÀàµ°¸â"));
-        cake.put("2", new Cake("2", "BÀàµ°¸â"));
-        cake.put("3", new Cake("3", "CÀàµ°¸â"));
-        cake.put("4", new Cake("4", "DÀàµ°¸â"));
-        cake.put("5", new Cake("5", "EÀàµ°¸â"));
+        cake.put("1", new Cake("1", "Aç±»è›‹ç³•"));
+        cake.put("2", new Cake("2", "Bç±»è›‹ç³•"));
+        cake.put("3", new Cake("3", "Cç±»è›‹ç³•"));
+        cake.put("4", new Cake("4", "Dç±»è›‹ç³•"));
+        cake.put("5", new Cake("5", "Eç±»è›‹ç³•"));
     }
-    // »ñµÃËùÓĞµÄµ°¸â
+    // è·å¾—æ‰€æœ‰çš„è›‹ç³•
     public static Collection<Cake> getAll() {
         return cake.values();
     }
-    // ¸ù¾İÖ¸¶¨µÄid»ñµ°¸â
+    // æ ¹æ®æŒ‡å®šçš„idè·è›‹ç³•
     public static Cake getCake(String id) {
         return cake.get(id);
     }

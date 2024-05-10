@@ -1,8 +1,8 @@
 /*
-* µÚ4ÕÂÄÚÈİ
-* LoginServlet.java
-* ×¢ÊÍÔ­Òò£ºÓëµÚ5ÕÂÄÚÈİÖØºÏ
-* ¸ÄÃûLoginServlet001.java
+ * ç¬¬4ç« å†…å®¹
+ * LoginServlet.java
+ * æ³¨é‡ŠåŸå› ï¼šä¸ç¬¬5ç« å†…å®¹é‡åˆ
+ * æ”¹åLoginServlet001.java
  * */
 
 //package response;
@@ -16,15 +16,15 @@
 //    public void doGet(HttpServletRequest request,
 //                      HttpServletResponse response)throws ServletException, IOException {
 //        response.setContentType("text/html;charset=UTF-8");
-//        // ÓÃHttpServletRequest¶ÔÏóµÄgetParameter()·½·¨»ñÈ¡ÓÃ»§ÃûºÍÃÜÂë
+//        // ç”¨HttpServletRequestå¯¹è±¡çš„getParameter()æ–¹æ³•è·å–ç”¨æˆ·åå’Œå¯†ç 
 //        String username = request.getParameter("username");
 //        String password = request.getParameter("password");
-//        // ¼ÙÉèÓÃ»§ÃûºÍÃÜÂë·Ö±ğÎª£ºitcastºÍ123
+//        // å‡è®¾ç”¨æˆ·åå’Œå¯†ç åˆ†åˆ«ä¸ºï¼šitcastå’Œ123
 //        if ("itcast".equals(username) &&"123".equals(password)) {
-//            // Èç¹ûÓÃ»§ÃûºÍÃÜÂëÕıÈ·£¬ÖØ¶¨Ïòµ½ welcome.html
+//            // å¦‚æœç”¨æˆ·åå’Œå¯†ç æ­£ç¡®ï¼Œé‡å®šå‘åˆ° welcome.html
 //            response.sendRedirect("/chapter04/welcome.html");
 //        } else {
-//            // Èç¹ûÓÃ»§ÃûºÍÃÜÂë´íÎó£¬ÖØ¶¨Ïòµ½login.html
+//            // å¦‚æœç”¨æˆ·åå’Œå¯†ç é”™è¯¯ï¼Œé‡å®šå‘åˆ°login.html
 //            response.sendRedirect("/chapter04/login.html");
 //        }
 //    }

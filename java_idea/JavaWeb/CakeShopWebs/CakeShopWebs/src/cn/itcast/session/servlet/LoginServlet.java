@@ -13,7 +13,7 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         PrintWriter pw = response.getWriter();
-        //¼ÙÉèÕıÈ·µÄÓÃ»§Ãû ÊÇitcast ÃÜÂëÊÇ123
+        //å‡è®¾æ­£ç¡®çš„ç”¨æˆ·å æ˜¯itcast å¯†ç æ˜¯123
         if (("itcast").equals(username) && ("123").equals(password)) {
             User user = new User();
             user.setUsername(username);
@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
             request.getSession().setAttribute("user", user);
             response.sendRedirect("/CakeShopWebs/IndexServlet");
         } else {
-            pw.write("ÓÃ»§Ãû»òÃÜÂë´íÎó£¬µÇÂ¼Ê§°Ü");
+            pw.write("ç”¨æˆ·åæˆ–å¯†ç é”™è¯¯ï¼Œç™»å½•å¤±è´¥");
         }
     }
     public void doPost(HttpServletRequest request,

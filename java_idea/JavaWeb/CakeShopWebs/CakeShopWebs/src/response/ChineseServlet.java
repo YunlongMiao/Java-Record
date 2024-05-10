@@ -10,9 +10,9 @@ public class ChineseServlet extends HttpServlet {
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)throws ServletException, IOException {
         response.setCharacterEncoding("utf-8");
-        //ÉèÖÃ×Ö·û±àÂë
+        //è®¾ç½®å­—ç¬¦ç¼–ç 
         response.setContentType("text/html;charset=utf-8");
-        String data = "ÖĞ¹ú";
+        String data = "ä¸­å›½";
         PrintWriter out = response.getWriter();
         out.println(data);
     }

@@ -8,7 +8,7 @@ public class LogoutServlet extends HttpServlet {
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)
             throws ServletException, IOException {
-        // 将Session对象中的User对象移除
+        // 灏哠ession瀵硅薄涓殑User瀵硅薄绉婚櫎
         request.getSession().removeAttribute("user");
         response.sendRedirect("/CakeShopWebs/IndexServlet");
     }

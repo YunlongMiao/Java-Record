@@ -8,19 +8,19 @@ import javax.servlet.http.*;
 public class IndexServlet extends HttpServlet {
     public void doGet(HttpServletRequest request,HttpServletResponse response)
             throws ServletException, IOException {
-        // ½â¾öÂÒÂëÎÊÌâ
+        // è§£å†³ä¹±ç é—®é¢˜
         response.setContentType("text/html;charset=utf-8");
-        // ´´½¨»òÕß»ñÈ¡±£´æÓÃ»§ĞÅÏ¢µÄSession¶ÔÏó
+        // åˆ›å»ºæˆ–è€…è·å–ä¿å­˜ç”¨æˆ·ä¿¡æ¯çš„Sessionå¯¹è±¡
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
         if (user == null) {
             response.getWriter().print(
-                    "Äú»¹Ã»ÓĞµÇÂ¼£¬Çë<a href='/CakeShopWebs/login.html'>µÇÂ¼</a>");
+                    "æ‚¨è¿˜æ²¡æœ‰ç™»å½•ï¼Œè¯·<a href='/CakeShopWebs/login.html'>ç™»å½•</a>");
         } else {
-            response.getWriter().print("ÄúÒÑµÇÂ¼£¬»¶Ó­Äã£¬" + user.getUsername() + "£¡");
+            response.getWriter().print("æ‚¨å·²ç™»å½•ï¼Œæ¬¢è¿ä½ ï¼Œ" + user.getUsername() + "ï¼");
             response.getWriter().print(
-                    "<a href='/CakeShopWebs/LogoutServlet'>ÍË³ö</a>");
-            // ´´½¨Cookie´æ·ÅSessionµÄ±êÊ¶ºÅ
+                    "<a href='/CakeShopWebs/LogoutServlet'>é€€å‡º</a>");
+            // åˆ›å»ºCookieå­˜æ”¾Sessionçš„æ ‡è¯†å·
             Cookie cookie = new Cookie("JSESSIONID", session.getId());
             cookie.setMaxAge(60 * 30);
             cookie.setPath("/CakeShopWebs");

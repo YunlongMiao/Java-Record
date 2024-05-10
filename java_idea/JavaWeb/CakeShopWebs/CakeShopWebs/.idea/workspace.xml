@@ -63,7 +63,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
+    "project.structure.last.edited": "库",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "File.Encoding",
@@ -73,6 +73,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\code\Java-Record\java_idea\JavaWeb\CakeShopWebs\CakeShopWebs\web" />
+      <recent name="G:\code\Java-Record\java_idea\JavaWeb\CakeShopWebs\CakeShopWebs\example\eSerlet" />
     </key>
   </component>
   <component name="RunManager">
@@ -190,6 +191,7 @@
       <workItem from="1715261182187" duration="4528000" />
       <workItem from="1715266422380" duration="3563000" />
       <workItem from="1715317930694" duration="3699000" />
+      <workItem from="1715329735775" duration="2171000" />
     </task>
     <servers />
   </component>
