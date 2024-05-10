@@ -20,6 +20,7 @@
       <list>
         <option value="HTML File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -56,13 +57,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat 服务器.Tomcat 8.5.50.executor": "Run",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "G:/code/Java-Record/java_idea/JavaWeb/CakeShopWebs/CakeShopWebs/web/WEB-INF/lib",
+    "last_opened_file_path": "E:/SoftDownload/BaiduNetdiskDownload/《Java Web程序设计任务教程》第2版/源代码/第6章/chapter06",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "工件",
+    "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "File.Encoding",
@@ -182,6 +183,7 @@
       <workItem from="1715137735987" duration="536000" />
       <workItem from="1715236283852" duration="584000" />
       <workItem from="1715261182187" duration="4528000" />
+      <workItem from="1715266422380" duration="3563000" />
     </task>
     <servers />
   </component>
