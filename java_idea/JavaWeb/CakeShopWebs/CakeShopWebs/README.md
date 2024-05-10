@@ -75,3 +75,35 @@
 /web/if.jsp
 ```
 
+
+
+第8章
+
+```
+判断用户名是否有效
+按照JSP Moderl2思想实现用户注册功能
+```
+
+```
+example/eJavaBean		JavaBean和jsp开发模型功能测试文件夹，无用
+
+/src/cn.itcast/Email.java
+/src/cn.itcast/CharactorEncoding.java
+/web/email.jsp
+/web/release.jsp
+
+/web/login.jsp
+/web/judge.jsp
+
+src/cn/itcast/chapter08/model2/domain/RegisterFormBean.java
+src/cn/itcast/chapter08/model2/domain/UserBean.java
+src/cn/itcast/chapter08/model2/util/DBUtil.java
+src/cn/itcast/chapter08/model2/web/ControllerServlet.java
+web/register.jsp
+web/loginSuccess.jsp
+```
+
+```
+/web/login.jsp	-->   /web/login6.jsp
+```
+
