@@ -5,7 +5,7 @@ import java.io.IOException;
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
-@WebServlet(name = "LogoutServlet",urlPatterns = "/LogoutServlet")
+@WebServlet(name = "LogoutServlet",urlPatterns = "/LogoutServlet09")
 public class LogoutServlet extends HttpServlet {
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)

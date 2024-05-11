@@ -14,7 +14,7 @@
 <head></head>
 <center><h3>用户登录</h3></center>
 <body style="text-align: center;">
-<form action="${pageContext.request.contextPath }/LoginServlet"
+<form action="${pageContext.request.contextPath }/LoginServlet09"
       method="post">
     <table border="1" width="600px" cellpadding="0" cellspacing="0"
            align="center" >

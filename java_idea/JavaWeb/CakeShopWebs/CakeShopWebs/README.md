@@ -1,3 +1,7 @@
+---
+
+---
+
 
 
 第四章内容
@@ -124,6 +128,7 @@ src/cn/itcast/chapter09/entity/User.java
 src/cn/itcast/chapter09/filter/LoginServlet.java
 src/cn/itcast/chapter09/filter/LogoutServlet.java
 src/cn/itcast/chapter09/filter/AutoLoginFilter.java
+web/login.jsp
 
 src/cn/itcast/fileupload/UploadServlet.java
 out/artifacts/CakeShopWebs_war_exploded2/upload			上传文件所在目录
@@ -135,7 +140,43 @@ web/download.jsp
 ```
 
 ```
-web/login.jsp		-->		web/login09.jsp
+web/login.jsp		-->		web/login08.jsp
 web/index.jsp  内容置换
+```
+
+
+
+
+
+第10章
+
+```
+使用JDBC完成数据的增删查改
+用户登录功能
+```
+
+
+
+```
+src/cn/itcast/jdbc/example/dao/UsersDao.java		数据库操作
+src/cn/itcast/jdbc/example/domain/User.java
+src/cn/itcast/jdbc/example/utils/JDBCUtils.java		连接数据库配置文件，数据库名，用户名和密码
+web/WEB-INF/lib/mysql-connector-java-8.0.15.jar		驱动
+
+src/cn/itcast/jdbc/example/JdbcInsertTest.java
+src/cn/itcast/jdbc/example/DeleteUserTest.java
+src/cn/itcast/jdbc/example/FindUserByIdTest.java
+src/cn/itcast/jdbc/example/FindAllUsersTest.java
+src/cn/itcast/jdbc/example/UpdateUserTest.java
+
+
+web/login10.jsp	
+src/cn/itcast/GetConnection.java
+src/cn/itcast/LoginServlet.java			
+```
+
+```
+web/login.jsp	--->		web/login09.jsp
+第9章部分内容因login.jsp改名修改
 ```
 

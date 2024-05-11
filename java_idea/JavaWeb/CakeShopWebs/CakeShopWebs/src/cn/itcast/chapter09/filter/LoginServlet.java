@@ -6,7 +6,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import cn.itcast.chapter09.entity.User;
-@WebServlet(name = "LoginServlet",urlPatterns = "/LoginServlet")
+@WebServlet(name = "LoginServlet",urlPatterns = "/LoginServlet09")
 public class LoginServlet extends HttpServlet {
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)
@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet {
             response.sendRedirect(request.getContextPath()+"/index.jsp");
         } else {
             request.setAttribute("errerMsg", "用户名或密码错误");
-            request.getRequestDispatcher("/login.jsp")
+            request.getRequestDispatcher("/login09.jsp")
                     .forward(request,response);
         }
     }
