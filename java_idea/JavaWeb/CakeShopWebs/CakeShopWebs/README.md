@@ -107,3 +107,35 @@ web/loginSuccess.jsp
 /web/login.jsp	-->   /web/login6.jsp
 ```
 
+
+
+第9章
+
+```
+Filter在Cookie自动登录中的使用
+实现文件上传
+实现文件下载
+```
+
+
+
+```
+src/cn/itcast/chapter09/entity/User.java
+src/cn/itcast/chapter09/filter/LoginServlet.java
+src/cn/itcast/chapter09/filter/LogoutServlet.java
+src/cn/itcast/chapter09/filter/AutoLoginFilter.java
+
+src/cn/itcast/fileupload/UploadServlet.java
+out/artifacts/CakeShopWebs_war_exploded2/upload			上传文件所在目录
+web/form.jsp
+
+src/cn/itcast/fileupload/DownloadServlet.java
+web/download/ASCII.jpg				测试文件下载，测试文件所在目录
+web/download.jsp
+```
+
+```
+web/login.jsp		-->		web/login09.jsp
+web/index.jsp  内容置换
+```
+
