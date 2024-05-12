@@ -34,7 +34,7 @@ Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%
     if (session.getAttribute("userBean") == null) {
 %>
-<jsp:forward page="register.jsp" />
+<jsp:forward page="register08.jsp" />
 <%
         return;
     }

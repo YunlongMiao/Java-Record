@@ -94,8 +94,21 @@ itcast
 /web/forward06.jsp
 /web/login06.jsp
 /web/user_register06.jsp
+```
+
+​	测试
 
 ```
+http://localhost:8080/CakeShopWebs/forward.jsp
+```
+
+```
+http://localhost:8080/CakeShopWebs/user_register06.jsp
+```
+
+
+
+
 
 第7章
 
@@ -111,11 +124,20 @@ itcast
 /web/if.jsp
 ```
 
+​	测试
+
+```
+http://localhost:8080/CakeShopWebs/if.jsp?action=mon
+tues  wed  thu	fri	sat	sun
+```
+
 
 
 第8章
 
 ```
+使用JavaBean解决中文乱码		否
+
 判断用户名是否有效
 按照JSP Moderl2思想实现用户注册功能
 ```
@@ -125,22 +147,36 @@ example/eJavaBean		JavaBean和jsp开发模型功能测试文件夹，无用
 
 /src/cn.itcast/Email.java
 /src/cn.itcast/CharactorEncoding.java
-/web/email.jsp
-/web/release.jsp
+/web/email08.jsp
+/web/release08.jsp
 
-/web/login.jsp
-/web/judge.jsp
+/web/login08.jsp
+/web/judge08.jsp
 
 src/cn/itcast/chapter08/model2/domain/RegisterFormBean.java
 src/cn/itcast/chapter08/model2/domain/UserBean.java
 src/cn/itcast/chapter08/model2/util/DBUtil.java
 src/cn/itcast/chapter08/model2/web/ControllerServlet.java
-web/register.jsp
-web/loginSuccess.jsp
+web/register08.jsp
+web/loginSuccess08.jsp
+```
+
+~~/web/login.jsp	-->   /web/login6.jsp~~
+
+
+
+测试
+
+```
+http://localhost:8080/CakeShopWebs/email08.jsp
 ```
 
 ```
-/web/login.jsp	-->   /web/login6.jsp
+http://localhost:8080/CakeShopWebs/login08.jsp
+```
+
+```
+http://localhost:8080/CakeShopWebs/register08.jsp
 ```
 
 
@@ -160,15 +196,15 @@ src/cn/itcast/chapter09/entity/User.java
 src/cn/itcast/chapter09/filter/LoginServlet.java
 src/cn/itcast/chapter09/filter/LogoutServlet.java
 src/cn/itcast/chapter09/filter/AutoLoginFilter.java
-web/login.jsp
+web/login09.jsp
 
 src/cn/itcast/fileupload/UploadServlet.java
 out/artifacts/CakeShopWebs_war_exploded2/upload			上传文件所在目录
-web/form.jsp
+web/upload09.jsp
 
 src/cn/itcast/fileupload/DownloadServlet.java
 web/download/ASCII.jpg				测试文件下载，测试文件所在目录
-web/download.jsp
+web/download09.jsp
 ```
 
 ```
@@ -176,7 +212,21 @@ web/login.jsp		-->		web/login08.jsp
 web/index.jsp  内容置换
 ```
 
+测试
 
+```
+http://localhost:8080/CakeShopWebs/login09.jsp
+itcast
+123456
+```
+
+```
+http://localhost:8080/CakeShopWebs/upload09.jsp
+```
+
+```
+http://localhost:8080/CakeShopWebs/download09.jsp
+```
 
 
 
@@ -195,11 +245,13 @@ src/cn/itcast/jdbc/example/domain/User.java
 src/cn/itcast/jdbc/example/utils/JDBCUtils.java		连接数据库配置文件，数据库名，用户名和密码
 web/WEB-INF/lib/mysql-connector-java-8.0.15.jar		驱动
 
-src/cn/itcast/jdbc/example/JdbcInsertTest.java
-src/cn/itcast/jdbc/example/DeleteUserTest.java
-src/cn/itcast/jdbc/example/FindUserByIdTest.java
-src/cn/itcast/jdbc/example/FindAllUsersTest.java
-src/cn/itcast/jdbc/example/UpdateUserTest.java
+example/source/jdbc.sql								数据库文件
+
+src/cn/itcast/jdbc/example/JdbcInsertTest.java		增
+src/cn/itcast/jdbc/example/DeleteUserTest.java		删
+src/cn/itcast/jdbc/example/FindUserByIdTest.java	查单个
+src/cn/itcast/jdbc/example/FindAllUsersTest.java	查所有
+src/cn/itcast/jdbc/example/UpdateUserTest.java		改
 
 
 web/login10.jsp	
@@ -207,8 +259,44 @@ src/cn/itcast/GetConnection.java
 src/cn/itcast/LoginServlet.java			
 ```
 
+
+
+~~web/login.jsp	--->		web/login09.jsp~~
+~~第9章部分内容因login.jsp改名修改~~
+
+测试
+
 ```
-web/login.jsp	--->		web/login09.jsp
-第9章部分内容因login.jsp改名修改
+分别运行
+JdbcInsertTest.java		增
+UpdateUserTest.java		改
+FindAllUsersTest.java	查所有
+FindUserByIdTest.java	查单个
+DeleteUserTest.java		删
 ```
 
+```
+http://localhost:8080/CakeShopWebs/login10.jsp
+张三
+123
+```
+
+Debug记录
+
+关于src/cn/itcast/LoginServlet.java中服务LoginServlet10在web运行中始终无法找到的问题
+
+将web/login10.jsp	第58行
+
+```
+<form action="/LoginServlet10" method="post">
+```
+
+改为
+
+```
+<form action="/CakeShopWebs/LoginServlet10" method="post">
+```
+
+得以解决。。。。
+
+服务过多，找不到？

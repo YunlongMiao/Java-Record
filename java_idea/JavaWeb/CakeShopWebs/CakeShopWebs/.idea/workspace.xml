@@ -9,17 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="061be004-ca8d-4735-89ca-fb18e9666f27" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/forward.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/login6.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/footer06.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/forward.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/forward06.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/header06.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login6.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login06.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user_register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user_register06.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="061be004-ca8d-4735-89ca-fb18e9666f27" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -255,10 +245,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.DeleteUserTest" />
-        <item itemvalue="应用程序.JdbcInsertTest" />
         <item itemvalue="应用程序.UpdateUserTest" />
         <item itemvalue="应用程序.FindUserByIdTest" />
         <item itemvalue="应用程序.FindAllUsersTest" />
+        <item itemvalue="应用程序.JdbcInsertTest" />
       </list>
     </recent_temporary>
   </component>
@@ -296,6 +286,7 @@
       <workItem from="1715445887584" duration="527000" />
       <workItem from="1715501590940" duration="5491000" />
       <workItem from="1715507234909" duration="370000" />
+      <workItem from="1715507662045" duration="3545000" />
     </task>
     <servers />
   </component>

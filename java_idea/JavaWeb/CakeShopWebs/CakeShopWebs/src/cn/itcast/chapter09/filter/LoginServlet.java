@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
             User user = new User();
             user.setUsername(username);
             user.setPassword(password);
-            request.getSession().setAttribute("user", user);
+            request.getSession().setAttribute("user09", user);
             // 发送自动登录的cookie
             String autoLogin = request.getParameter("autologin");
             if (autoLogin != null) {

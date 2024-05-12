@@ -10,9 +10,9 @@
         <param-value>initParam对象使用测试</param-value>
     </context-param>
 
-    <context-param>
-        <param-name>LoginServlet</param-name>
-        <param-value>/Test0001</param-value>
-    </context-param>
+<!--    <context-param>-->
+<!--        <param-name>LoginServlet</param-name>-->
+<!--        <param-value>/Test0001</param-value>-->
+<!--    </context-param>-->
 
 </web-app>

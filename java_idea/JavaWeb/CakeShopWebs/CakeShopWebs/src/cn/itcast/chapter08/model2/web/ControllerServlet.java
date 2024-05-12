@@ -34,7 +34,7 @@ public class ControllerServlet extends HttpServlet {
         // 验证参数填写是否符合要求，如果不符合，转发到register.jsp重新填写
         if(!formBean.validate()){
             request.setAttribute("formBean", formBean);
-            request.getRequestDispatcher("/register.jsp")
+            request.getRequestDispatcher("/register08.jsp")
                     .forward(request, response);
             return;
         }
@@ -49,7 +49,7 @@ public class ControllerServlet extends HttpServlet {
         if(!b){
             request.setAttribute("DBMes", "你注册的用户已存在");
             request.setAttribute("formBean", formBean);
-            request.getRequestDispatcher("/register.jsp")
+            request.getRequestDispatcher("/register08.jsp")
                     .forward(request, response);
             return;
         }
@@ -57,6 +57,6 @@ public class ControllerServlet extends HttpServlet {
         // 将成功注册的用户信息添加到Session中
         request.getSession().setAttribute("userBean", userBean);
         // 注册成功后，3秒跳转到登录成功页面loginSuccess.jsp
-        response.setHeader("refresh","3;url=loginSuccess.jsp");
+        response.setHeader("refresh","3;url=loginSuccess08.jsp");
     }
 }

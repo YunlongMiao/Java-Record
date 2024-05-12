@@ -13,7 +13,7 @@
     <title>邮件发送</title>
 </head>
 <body>
-<form action="release.jsp" method="post">
+<form action="release08.jsp" method="post">
     <table align="center" width="450" height="260" border="1">
         <tr>
             <td align="center" colspan="2" height="40"><b>邮件发送</b></td>

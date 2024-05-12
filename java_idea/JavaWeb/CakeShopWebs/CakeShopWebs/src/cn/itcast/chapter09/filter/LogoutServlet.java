@@ -5,13 +5,13 @@ import java.io.IOException;
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
-@WebServlet(name = "LogoutServlet",urlPatterns = "/LogoutServlet09")
+@WebServlet(name = "LogoutServlet09",urlPatterns = "/LogoutServlet09")
 public class LogoutServlet extends HttpServlet {
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)
             throws ServletException, IOException {
         // 用户注销
-        request.getSession().removeAttribute("user");
+        request.getSession().removeAttribute("user09");
         // 从客户端删除自动登录的cookie
         Cookie cookie = new Cookie("autologin", "msg");
         cookie.setPath(request.getContextPath());

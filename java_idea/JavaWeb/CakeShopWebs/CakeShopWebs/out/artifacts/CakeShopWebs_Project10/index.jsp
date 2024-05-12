@@ -37,11 +37,11 @@
 <br />
 <c:choose>
   <c:when test="${sessionScope.user==null }">
-    <a href="${pageContext.request.contextPath }/login10.jsp">用户登录</a>
+    <a href="${pageContext.request.contextPath }/login09.jsp">第九章用户登录</a>
   </c:when>
   <c:otherwise>
     欢迎你，${sessionScope.user.username }!
-    <a href="${pageContext.request.contextPath }/LogoutServlet">注销</a>
+    <a href="${pageContext.request.contextPath }/LogoutServlet09">第九章注销</a>
   </c:otherwise>
 </c:choose>
 <hr />

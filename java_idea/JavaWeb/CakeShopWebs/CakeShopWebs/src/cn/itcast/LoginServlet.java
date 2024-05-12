@@ -9,12 +9,13 @@ import java.io.PrintWriter;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-//@WebServlet(name = "LoginServlet",urlPatterns = "/Test0001")
+
+@WebServlet(name = "LoginServlet10",urlPatterns = "/LoginServlet10")
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse
             response)throws ServletException, IOException {
         //设置请求编码、响应方式和编码方式
-        System.out.println("LoginServlet");
+        System.out.println("LoginServlet10");
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");

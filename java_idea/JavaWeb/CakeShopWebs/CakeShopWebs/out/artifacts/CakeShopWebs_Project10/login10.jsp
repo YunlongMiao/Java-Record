@@ -55,7 +55,7 @@
     }
 </style>
 <body>
-<form action="/Test0001" method="post">
+<form action="/CakeShopWebs/LoginServlet10" method="post">
     <table>
         <tr>
             <td class="alignRight">

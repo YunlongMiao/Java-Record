@@ -7,7 +7,7 @@ public class UpdateUserTest{
         // 修改User对象的数据
         UsersDao usersDao = new UsersDao();
         User user = new User();
-        user.setId(4);
+        user.setId(6);
         user.setUsername("zhaoxiaoliu");
         user.setPassword("456");
         user.setEmail("zhaoxiaoliu@sina.com");

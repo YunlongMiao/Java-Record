@@ -34,7 +34,7 @@ public class AutoLoginFilter implements Filter {
                 User user = new User();
                 user.setUsername(username);
                 user.setPassword(password);
-                request.getSession().setAttribute("user", user);
+                request.getSession().setAttribute("user09", user);
             }
         }
         // 放行
