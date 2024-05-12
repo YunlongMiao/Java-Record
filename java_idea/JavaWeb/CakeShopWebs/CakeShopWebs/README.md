@@ -245,7 +245,7 @@ src/cn/itcast/jdbc/example/domain/User.java
 src/cn/itcast/jdbc/example/utils/JDBCUtils.java		连接数据库配置文件，数据库名，用户名和密码
 web/WEB-INF/lib/mysql-connector-java-8.0.15.jar		驱动
 
-example/source/jdbc.sql								数据库文件
+example/source/jdbc.sql								第10章数据库文件
 
 src/cn/itcast/jdbc/example/JdbcInsertTest.java		增
 src/cn/itcast/jdbc/example/DeleteUserTest.java		删
@@ -316,13 +316,6 @@ Debug记录
 
 
 ```
-src/cn/itcast/chapter11/example			分别写了JDBC和C3P0数据库连接池在使用配置文件和其他方式获取连接的不同，Example01~Example04
-src/cn/itcast/jdbc/dao		C3P0数据库连接池增删查改操作
-src/cn/itcast/jdbc/javabean/User.java		测试实例对象
-src/cn/itcast/jdbc/utils/C3p0Utils.java		//创建数据源
-src/c3p0-config.xml		C3P0数据库的连接信息和数据源的初始化信息
-src/dbcpconfig.properties		JDBC数据库配置文件
-
 web/WEB-INF/lib/commons-dbcp2-2.7.0.jar		DBCP数据库连接池实现包
 web/WEB-INF/lib/commons-pool2-2.8.0.jar		commons-dbcp2-2.7.0.jar依赖包
 
@@ -330,6 +323,17 @@ web/WEB-INF/lib/c3p0-0.9.2.1.jar
 web/WEB-INF/lib/commons-dbutils-1.7.jar
 web/WEB-INF/lib/commons-logging-1.2.jar
 web/WEB-INF/lib/mchange-commons-java-0.2.3.4.jar
+example/sources/jdbc_user.sql					第11章数据库文件
+
+
+
+src/cn/itcast/chapter11/example			分别写了JDBC和C3P0数据库连接池在使用配置文件和其他方式获取连接的不同，Example01~Example04
+src/cn/itcast/jdbc/dao		C3P0数据库连接池增删查改操作
+src/cn/itcast/jdbc/javabean/User.java		测试实例对象
+src/cn/itcast/jdbc/utils/C3p0Utils.java		//创建数据源
+src/c3p0-config.xml		C3P0数据库的连接信息和数据源的初始化信息
+src/dbcpconfig.properties		JDBC数据库配置文件
+
 ```
 
 #### 测试
@@ -340,5 +344,30 @@ InsertDao.java		增
 UpdateDao.java		改
 QueryDao.java		查
 DeleteDao.java		删
+```
+
+
+
+
+
+### 第12章
+
+```
+Ajax--实时显示公告信息
+```
+
+```
+web/jquery-3.6.0.js
+example/sources/info.sql"				第11章数据库文件		
+src/cn/itcast/chapter12/ConnDB.java
+src/cn/itcast/chapter12/connDB.properties
+web/getInfo12.jsp
+web/index.jsp
+```
+
+#### 测试
+
+```
+自动跳转
 ```
 

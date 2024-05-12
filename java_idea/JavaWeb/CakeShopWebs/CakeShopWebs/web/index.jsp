@@ -25,10 +25,30 @@
 %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
+
 <head>
-  <title>显示登录的用户信息</title>
+  <title>index</title>
+  <script type="text/javascript"
+          src="${pageContext.request.contextPath}/jquery-3.6.0.js"></script>
+  <script language="JavaScript">
+    function getInfo() {
+      $.get("http://localhost:8080/CakeShopWebs/getInfo12.jsp?nocache="+new  Date().getTime(),function (data) {
+        $("#showInfo").html(data);
+      });
+    }
+    $(document).ready(function () {
+      getInfo();//调用getInfo()方法获取公告信息
+      window.setInterval("getInfo()",600000);
+    })
+  </script>
 </head>
+
 <body>
+<section>
+  <marquee id="showInfo" direction="up" scrollamount="3">
+  </marquee>
+</section>
+
 <br />
 <center>
   <h3>欢迎光临</h3>
