@@ -22,7 +22,7 @@
 </head>
 <body>
 <!--header-->
-<jsp:include page="/header.jsp"/>
+<jsp:include page="/header06.jsp"/>
 <!--//header-->
 <!--account-->
 <div class="account">
@@ -68,7 +68,7 @@
 </div>
 <!--//account-->
 <!--footer-->
-<jsp:include page="/footer.jsp"/>
+<jsp:include page="/footer06.jsp"/>
 <!--//footer-->
 </body>
 </html>

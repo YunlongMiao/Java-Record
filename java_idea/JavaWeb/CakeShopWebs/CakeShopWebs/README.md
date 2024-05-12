@@ -10,8 +10,21 @@
 /src/request
 /src/response
 /web/form.html
-/web/login.html
+/web/login04.html
 /web/welcome.html
+```
+
+​	测试
+
+```
+http://localhost:8080/CakeShopWebs/form.html
+用户密码随意
+```
+
+```
+http://localhost:8080/CakeShopWebs/login04.html
+itcast
+123
 ```
 
 
@@ -31,18 +44,37 @@
 /src/cn.itcast.session/servlet
 /src/LastAccessServlet.java
 /web/WEB-INF/lib/servlet-api.jar
+/web/login05.html
 ```
+
+测试
+
+```
+http://localhost:8080/CakeShopWebs/LastAccessServlet
+```
+
+```
+http://localhost:8080/CakeShopWebs/login05.html
+itcast
+123
+
+备注
+ class cn.itcast.chapter09.entity.User cannot be cast to class cn.itcast.session.entity.User (cn.itcast.chapter09.entity.User and cn.itcast.session.entity.User are in unnamed module of loader org.apache.catalina.loader.ParallelWebappClassLoader @7cea41e1)
+ 
+ 创建了两个相同的session对象
+```
+
+
 
 第5章修改记录
 
-```
-/*/src/response/LoginServlet.java
-* 第4章内容
-* LoginServlet.java
-* 注释原因：与第5章内容重合
-* 改名LoginServlet001.java
- * */
-```
+~~/*/src/response/LoginServlet.java~~
+
+* ~~第4章内容~~
+* ~~LoginServlet.java~~
+* ~~注释原因：与第5章内容重合~~
+* ~~改名LoginServlet001.java~~
+ * ~~*/~~
 
 
 
@@ -57,11 +89,11 @@
 /example/Ejsp		jsp功能测试文件夹，无用
 /web/css
 /web/fonts
-/web/header.jsp
-/web/footer.jsp
-/web/forward.jsp
-/web/login.jsp
-/web/user_register.jsp
+/web/header06.jsp
+/web/footer06.jsp
+/web/forward06.jsp
+/web/login06.jsp
+/web/user_register06.jsp
 
 ```
 

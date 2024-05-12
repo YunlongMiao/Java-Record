@@ -15,7 +15,7 @@
     <title>中转页</title>
 </head>
 <body>
-<jsp:forward page="login6.jsp"/>
+<jsp:forward page="login06.jsp"/>
 </body>
 </html>
 
