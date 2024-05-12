@@ -4,7 +4,7 @@
 
 
 
-第四章内容
+### 第四章内容
 
 ```
 /src/request
@@ -14,7 +14,7 @@
 /web/welcome.html
 ```
 
-​	测试
+#### 	测试
 
 ```
 http://localhost:8080/CakeShopWebs/form.html
@@ -29,7 +29,7 @@ itcast
 
 
 
-第5章内容
+### 第5章内容
 
 ```
 显示用户上次访问时间
@@ -47,7 +47,7 @@ itcast
 /web/login05.html
 ```
 
-测试
+#### 测试
 
 ```
 http://localhost:8080/CakeShopWebs/LastAccessServlet
@@ -78,7 +78,7 @@ itcast
 
 
 
-第6章内容
+### 第6章内容
 
 ```
 将页面转发到用户登录界面
@@ -96,7 +96,7 @@ itcast
 /web/user_register06.jsp
 ```
 
-​	测试
+#### 	测试
 
 ```
 http://localhost:8080/CakeShopWebs/forward.jsp
@@ -110,7 +110,7 @@ http://localhost:8080/CakeShopWebs/user_register06.jsp
 
 
 
-第7章
+### 第7章
 
 ```
 根据参数请求显示不同的页面
@@ -124,7 +124,7 @@ http://localhost:8080/CakeShopWebs/user_register06.jsp
 /web/if.jsp
 ```
 
-​	测试
+#### 	测试
 
 ```
 http://localhost:8080/CakeShopWebs/if.jsp?action=mon
@@ -133,7 +133,7 @@ tues  wed  thu	fri	sat	sun
 
 
 
-第8章
+### 第8章
 
 ```
 使用JavaBean解决中文乱码		否
@@ -165,7 +165,7 @@ web/loginSuccess08.jsp
 
 
 
-测试
+#### 测试
 
 ```
 http://localhost:8080/CakeShopWebs/email08.jsp
@@ -181,7 +181,7 @@ http://localhost:8080/CakeShopWebs/register08.jsp
 
 
 
-第9章
+### 第9章
 
 ```
 Filter在Cookie自动登录中的使用
@@ -212,7 +212,7 @@ web/login.jsp		-->		web/login08.jsp
 web/index.jsp  内容置换
 ```
 
-测试
+#### 测试
 
 ```
 http://localhost:8080/CakeShopWebs/login09.jsp
@@ -230,7 +230,7 @@ http://localhost:8080/CakeShopWebs/download09.jsp
 
 
 
-第10章
+### 第10章
 
 ```
 使用JDBC完成数据的增删查改
@@ -264,7 +264,7 @@ src/cn/itcast/LoginServlet.java
 ~~web/login.jsp	--->		web/login09.jsp~~
 ~~第9章部分内容因login.jsp改名修改~~
 
-测试
+#### 测试
 
 ```
 分别运行
@@ -300,3 +300,45 @@ Debug记录
 得以解决。。。。
 
 服务过多，找不到？
+
+
+
+
+
+
+
+### 第11章
+
+```
+使用DBUtils实现增删查改
+```
+
+
+
+```
+src/cn/itcast/chapter11/example			分别写了JDBC和C3P0数据库连接池在使用配置文件和其他方式获取连接的不同，Example01~Example04
+src/cn/itcast/jdbc/dao		C3P0数据库连接池增删查改操作
+src/cn/itcast/jdbc/javabean/User.java		测试实例对象
+src/cn/itcast/jdbc/utils/C3p0Utils.java		//创建数据源
+src/c3p0-config.xml		C3P0数据库的连接信息和数据源的初始化信息
+src/dbcpconfig.properties		JDBC数据库配置文件
+
+web/WEB-INF/lib/commons-dbcp2-2.7.0.jar		DBCP数据库连接池实现包
+web/WEB-INF/lib/commons-pool2-2.8.0.jar		commons-dbcp2-2.7.0.jar依赖包
+
+web/WEB-INF/lib/c3p0-0.9.2.1.jar
+web/WEB-INF/lib/commons-dbutils-1.7.jar
+web/WEB-INF/lib/commons-logging-1.2.jar
+web/WEB-INF/lib/mchange-commons-java-0.2.3.4.jar
+```
+
+#### 测试
+
+```
+分别运行
+InsertDao.java		增
+UpdateDao.java		改
+QueryDao.java		查
+DeleteDao.java		删
+```
+
