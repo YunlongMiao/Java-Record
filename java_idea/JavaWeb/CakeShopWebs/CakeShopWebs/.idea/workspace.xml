@@ -10,18 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="061be004-ca8d-4735-89ca-fb18e9666f27" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/example/sources/info.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/sources/jdbc_user.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/chapter12/ConnDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/chapter12/connDB.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/getInfo12.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/jquery-3.6.0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CakeShopWebs/dbcpconfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CakeShopWebs/dbcpconfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dbcpconfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbcpconfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +65,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "工件",
+    "project.structure.last.edited": "SDK",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
@@ -306,6 +295,7 @@
       <workItem from="1715507662045" duration="3545000" />
       <workItem from="1715511971857" duration="3760000" />
       <workItem from="1715516212601" duration="4375000" />
+      <workItem from="1715525340870" duration="117000" />
     </task>
     <servers />
   </component>
