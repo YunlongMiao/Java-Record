@@ -1,11 +1,11 @@
 package cn.itcast.session.entity;
-public class Cake {
+public class Cake05 {
     private static final long serialVersionUID = 1L;
     private String id;
     private String name;
-    public Cake() {
+    public Cake05() {
     }
-    public Cake(String id, String name) {
+    public Cake05(String id, String name) {
         this.id = id;
         this.name = name;
     }

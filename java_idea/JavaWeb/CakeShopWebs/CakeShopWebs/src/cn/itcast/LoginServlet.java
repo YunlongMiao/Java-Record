@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-@WebServlet(name = "LoginServlet",urlPatterns = "/LoginServlet10")
+//@WebServlet(name = "LoginServlet",urlPatterns = "/Test0001")
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse
             response)throws ServletException, IOException {

@@ -6,7 +6,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import cn.itcast.chapter09.entity.User;
-@WebServlet(name = "LoginServlet",urlPatterns = "/LoginServlet09")
+@WebServlet(name = "LoginServlet09",urlPatterns = "/LoginServlet09")
 public class LoginServlet extends HttpServlet {
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)

@@ -1,5 +1,5 @@
 package cn.itcast.session.servlet;
-import cn.itcast.session.entity.Cake;
+import cn.itcast.session.entity.Cake05;
 import java.io.*;
 import java.util.List;
 import javax.servlet.ServletException;
@@ -12,7 +12,7 @@ public class CartServlet extends HttpServlet {
         resp.setContentType("text/html;charset=utf-8");
         PrintWriter out = resp.getWriter();
         // 变量cart引用用户的购物车
-        List<Cake> cart = null;
+        List<Cake05> cart = null;
         // 变量pruFlag标记用户是否买过商品
         boolean purFlag = true;
         // 获得用户的session
@@ -22,7 +22,7 @@ public class CartServlet extends HttpServlet {
             purFlag = false;
         } else {
             // 获得用户购物车
-            cart = (List) session.getAttribute("cart");
+            cart = (List) session.getAttribute("cart05");
             // 如果用的购物车为null，purFlag置为false
             if (cart == null) {
                 purFlag = false;
@@ -37,7 +37,7 @@ public class CartServlet extends HttpServlet {
             // 否则显示用户购买蛋糕的信息
             out.write("您购买的蛋糕有：<br>");
             double price = 0;
-            for (Cake cake : cart) {
+            for (Cake05 cake : cart) {
                 out.write(cake.getName() + "<br>");
             }
         }

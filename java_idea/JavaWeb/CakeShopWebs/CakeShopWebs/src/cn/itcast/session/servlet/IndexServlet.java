@@ -1,5 +1,5 @@
 package cn.itcast.session.servlet;
-import cn.itcast.session.entity.User;
+import cn.itcast.session.entity.User05;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,10 +12,10 @@ public class IndexServlet extends HttpServlet {
         response.setContentType("text/html;charset=utf-8");
         // 创建或者获取保存用户信息的Session对象
         HttpSession session = request.getSession();
-        User user = (User) session.getAttribute("user");
+        User05 user = (User05) session.getAttribute("user05");
         if (user == null) {
             response.getWriter().print(
-                    "您还没有登录，请<a href='/CakeShopWebs/login.html'>登录</a>");
+                    "您还没有登录，请<a href='/CakeShopWebs/login05.html'>登录</a>");
         } else {
             response.getWriter().print("您已登录，欢迎你，" + user.getUsername() + "！");
             response.getWriter().print(

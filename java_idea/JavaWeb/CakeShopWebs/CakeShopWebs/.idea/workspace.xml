@@ -10,33 +10,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="061be004-ca8d-4735-89ca-fb18e9666f27" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/GetConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/jdbc/example/DeleteUserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/jdbc/example/FindAllUsersTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/jdbc/example/FindUserByIdTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/jdbc/example/JdbcInsertTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/jdbc/example/UpdateUserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/jdbc/example/dao/UsersDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/jdbc/example/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/jdbc/example/utils/JDBCUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/login08.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/login10.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login05.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_war_exploded2/WEB-INF/classes/cn/itcast/chapter09/filter/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_war_exploded2/WEB-INF/classes/cn/itcast/chapter09/filter/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_war_exploded2/WEB-INF/classes/cn/itcast/chapter09/filter/LogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_war_exploded2/WEB-INF/classes/cn/itcast/chapter09/filter/LogoutServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_war_exploded2/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_war_exploded2/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_war_exploded2/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_war_exploded2/login09.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_war_exploded2/login09.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/WEB-INF/classes/cn/itcast/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/WEB-INF/classes/cn/itcast/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/WEB-INF/classes/cn/itcast/chapter09/filter/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/WEB-INF/classes/cn/itcast/chapter09/filter/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/WEB-INF/classes/cn/itcast/session/servlet/IndexServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/WEB-INF/classes/cn/itcast/session/servlet/IndexServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/WEB-INF/classes/cn/itcast/session/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/WEB-INF/classes/cn/itcast/session/servlet/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/login10.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CakeShopWebs_Project10/login10.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CakeShopWebs/cn/itcast/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CakeShopWebs/cn/itcast/LoginServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CakeShopWebs/cn/itcast/chapter09/filter/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CakeShopWebs/cn/itcast/chapter09/filter/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CakeShopWebs/cn/itcast/chapter09/filter/LogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CakeShopWebs/cn/itcast/chapter09/filter/LogoutServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CakeShopWebs/cn/itcast/session/servlet/IndexServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CakeShopWebs/cn/itcast/session/servlet/IndexServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CakeShopWebs/cn/itcast/session/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CakeShopWebs/cn/itcast/session/servlet/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/itcast/chapter09/filter/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/chapter09/filter/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/itcast/chapter09/filter/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/chapter09/filter/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/session/entity/Cake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/session/entity/Cake05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/session/entity/CakeDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/session/entity/CakeDB05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/session/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/session/entity/User05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/session/servlet/CartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/session/servlet/CartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/session/servlet/IndexServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/session/servlet/IndexServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/session/servlet/ListCakeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/session/servlet/ListCakeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/session/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/session/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/session/servlet/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/session/servlet/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/session/servlet/PurchaseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/session/servlet/PurchaseServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/response/LoginServlet001.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/response/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login09.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login09.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/login04.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login10.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login10.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +90,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat 服务器.Tomcat 8.5.50.executor": "Run",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/SoftDownload/BaiduNetdiskDownload/《Java Web程序设计任务教程》第2版/源代码/第10章/chapter10",
+    "last_opened_file_path": "E:/SoftDownload/BaiduNetdiskDownload/《Java Web程序设计任务教程》第2版/源代码/第5章/chapter05",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -312,6 +317,7 @@
       <workItem from="1715353956712" duration="6375000" />
       <workItem from="1715435685265" duration="9429000" />
       <workItem from="1715445887584" duration="527000" />
+      <workItem from="1715501590940" duration="5491000" />
     </task>
     <servers />
   </component>

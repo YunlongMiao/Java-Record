@@ -1,5 +1,5 @@
 package cn.itcast.session.entity;
-public class User {
+public class User05 {
     private String username;
     private String password;
     public String getUsername() {
